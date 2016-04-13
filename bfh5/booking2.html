@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width,initial-scale=1.0,user-scalable = no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <title>暴风订单</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
+
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+</head>
+<body>
+<!--top-->
+<section class="top">
+    <span></span>确认订单
+</section>
+<!--top end-->
+<!--content-->
+<section class="content">
+    <!--->
+    <section class="addressBo addAdd">
+        <ul>
+            <li>
+                <a href="modifyAddress.html"><i>+</i><i>添加收货地址</i></a>
+            </li>
+            <li>
+                <a href="modifyAddress.html"><span></span></a>
+            </li>
+        </ul>
+    </section>
+    <section class="addressBo sendBy">
+        <ul>
+            <li>
+                支付方式
+            </li>
+            <li>
+                <a href="#">在线支付<span></span></a>
+            </li>
+        </ul>
+    </section>
+    <section class="addressBo sendBy noMar borBtoom">
+        <ul>
+            <li>
+                配送方式
+            </li>
+            <li>
+                <a href="#">普通快递配送<span></span></a>
+            </li>
+        </ul>
+    </section>
+    <!--card-->
+    <section class="card borBtoom">
+        <h3>发票类型</h3>
+        <section class="cardBox">
+            <p class="carT">
+                <a href="#">电子发票</a><a href="#">个人发票</a><a href="#" id="cardC">单位发票</a>
+            </p>
+            <div class="carExtr">
+                <input type="text" placeholder="请输入发票抬头"/>
+            </div>
+        </section>
+    </section>
+    <!--card end-->
+    <!--card-->
+    <section class="card borBtoom">
+        <h3>使用优惠券</h3>
+        <section class="cardBox">
+            <div class="carExtr Discount">
+                <input type="text" placeholder="请填写已有优惠码"/>
+                <input type="button" value="确定" class="button"/>
+            </div>
+        </section>
+    </section>
+    <!--card end-->
+    <!--goodsBox-->
+    <section class="goodsBox">
+        <section class="goodsList">
+            <div>
+                <a href="#"><img src="images/product.png" alt="商品图片"/></a>
+            </div>
+            <div>
+                <h3>暴风超体电视  55吋  玫瑰金设计</h3>
+                <p class="colorOr">支持七天无理由退换货</p>
+            </div>
+            <div>
+                ¥4899.00 ╳1
+            </div>
+        </section>
+        <section class="goodsList goodsInfo">
+            <ul>
+                <li>商品件数：1</li>
+                <li>商品总金额：¥4899.00</li>
+                <li>配送费用：+0元</li>
+                <li>优惠券抵用：-0元</li>
+            </ul>
+        </section>
+    </section>
+    <!--goodsBox end-->
+    <!--->
+</section>
+<!--content end-->
+<!--pay-->
+<section class="pay">
+    <a href="#">合计：¥4899.00</a>
+    <a href="#">去付款</a>
+</section>
+<!--pay end-->
+</body>
+</html>
