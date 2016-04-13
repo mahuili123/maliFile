@@ -1,0 +1,433 @@
+/*return*/
+.returnTitle{
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 27px;
+}
+.returnTitle .fl b{
+    font-size: 18px;
+}
+.returnTitle .fr a{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #e73d4d;
+    margin-left: 20px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.returnGoods{
+    padding: 0px 27px;
+}
+.returnGoodsTable{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.returnGoodsTable th{
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.returnGoodsTable td{
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.returnGoodsTable dl{
+    overflow: hidden;
+    padding: 20px 0;
+}
+.returnGoodsTable dl dt,.returnGoodsTable dl dd{
+    float: left;
+}
+.returnGoodsTable dl dt{
+    margin-left: 10px;
+    width: 30%;
+}
+.returnGoodsTable dl dt img{
+    max-width: 100px;
+    display: block;
+    padding: 15px 5px;
+    border: 1px solid #ccc;
+}
+.returnGoodsTable dl dd{
+    width: 60%;
+    padding: 10px 10px;
+    text-align: left;
+}
+.returnGoods .pInfo{
+    color: #666;
+    font-size: 14px;
+    line-height: 30px;
+}
+.item{
+    height: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.item .labelFl{
+    width: 122px;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 6px 0;
+    font-size: 14px;
+    color: #000;
+}
+.item .itemFr{
+    width: 550px;
+    float: left;
+}
+.item .itemFr li{
+    float: left;
+    width: 94px;
+    height: 34px;
+    border: 1px solid #ccc;
+    line-height: 34px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    margin-right: 32px;
+    cursor: pointer;
+}
+.item .itemFr li.selected{
+    border: 1px solid #e73d4d;
+    background: url("../images/ico/icoSeleted.png") no-repeat bottom right;
+}
+.decrement {
+    margin-right: 2px;
+    background-position: 0 0;
+}
+.decrement, .increment {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-right: 2px;
+    vertical-align: middle;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: -5px;
+}
+
+.text01 {
+    width: 20px;
+    margin-right: 3px;
+    text-align: center;
+}
+.text {
+    float: none;
+}
+.text {
+    height: 32px;
+    width: 64px;
+    border: 1px solid #ccc;
+    color: #000;
+    font-size: 18px;
+}
+
+.area {
+    float: none;
+    width:543px;
+    height: 144px;
+    resize: none;
+}
+.area{
+    line-height: 18px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    float: none;
+}
+.ar {
+    text-align: right;
+}
+.ftx-03, .ftx03 {
+    color: #999;
+}
+.imgInfo p{
+    font-size: 12px;
+    color: #666;
+    line-height: 22px;
+}
+.item .returnDelivery li{
+    width: 200px;
+}
+.lineDiv{
+    width: 100%;
+    border: 1px dashed #ccc;
+}
+.customerInfo{
+    padding: 20px 0;
+}
+.customerInfo b{
+    font-size: 14px;
+    color: #000;
+}
+.customerInfo ul{
+    margin: 10px 0;
+}
+.customerInfo ul li{
+    margin-bottom: 20px;
+}
+.customerInfo ul li label{
+    width: 120px;
+    font-size: 14px;
+    color: #000;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+}
+.customerInfo ul li input{
+    width: 278px;
+    height: 36px;
+    border: 1px solid #ccc;
+    line-height: 36px;
+    padding-left: 10px;
+}
+.customerInfo ul li input#address{
+    width: 500px;
+}
+.returnBtn{
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    margin: 10px auto;
+    background-color: #e73d4d;
+}
+.mpTReturn{
+    border: none;
+}
+.recordTable{
+    width: 97%;
+    margin: 10px auto;
+}
+.recordTable th{
+    height: 42px;
+    line-height: 42px;
+    background-color: #eee;
+    color: #000;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+.recordTable td{
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    border-top: 0;
+}
+.recordTable td{
+    padding: 20px 10px;
+}
+.recordTable .goodsImg dl dt{
+    float: left;
+    width:50%
+}
+.recordTable .goodsImg dl dt img{
+    max-width: 112px;
+    padding: 10px;
+    border: 1px solid #dfdfdf;
+}
+.recordTable .goodsImg dl dd{
+    float: left;
+    width:50%;
+    font-size:14px;
+}
+.recordTable td p{
+    line-height: 22px;
+}
+.recordTable .operation a{
+    display: block;
+    width: 68px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid #e73d4d;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #e73d4d;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.infoInfo{
+    padding: 10px 0;
+}
+.processing{
+    margin: 20px 0;
+}
+.processing h3{
+    height: 30px;
+}
+.processing h3 em,.sendContent h3 em{
+    width: 3px;
+    height: 16px;
+    display: block;
+    background-color: #e73d4d;
+    float: left;
+    font-style: normal;
+}
+.processing h3 span,.sendContent h3 span{
+    height: 16px;
+    float: left;
+    color: #000;
+    font-size: 16px;
+    display: block;
+    padding-left: 5px;
+    line-height: 16px;
+}
+.processingTable{
+    width: 100%;
+}
+.processingTable td{
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    /* font-family:"\5B8B\4F53";*/
+}
+.serviceInfo{
+    /* font-family:"\5B8B\4F53";*/
+}
+.serviceInfo th{
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    border: 1px solid #dfdfdf;
+    font-weight: normal;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.serviceInfo td{
+    font-size: 14px;
+    border: 1px solid #dfdfdf;
+    padding-left: 10px;
+}
+.serviceInfo td ul li{
+    float: left;
+    margin-right: 10px;
+    margin: 10px 10px 10px 0;
+    border: 1px solid #dfdfdf;
+}
+.serviceInfo td ul li img{
+    max-height: 100%;
+}
+.state{
+    width: 86px;
+    font-size: 14px;
+    margin: 10px auto;
+}
+.sendPop .mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity:0.5;
+    z-index: 2;
+    display: none;
+}
+.sendPop .sendContent{
+    padding: 20px;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -320px;
+    margin-top: -170px;
+    z-index: 3;
+    display: none;
+}
+.sendContent ul{
+    margin: 40px 0;
+}
+.sendContent ul li{
+    margin-bottom: 30px;
+}
+
+.sendContent ul .textInput{
+    width: 580px;
+    height: 48px;
+    border: 1px solid #dfdfdf;
+    line-height: 48px;
+    padding-left: 10px;
+    position: relative;
+}
+.sendContent ul label{
+    position: absolute;
+    z-index: 4;
+    margin-top: 14px;
+    margin-left: 12px;
+    color: #999;
+    font-size: 16px;
+}
+.textInput p{
+    font-size: 16px;
+    cursor: pointer;
+}
+.textInput p .upDown{
+    width: 18px;
+    height: 9px;
+    display: block;
+    background: url("../images/ico/upDown.png") no-repeat 0px -15px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.textInput p .foo{
+    background-position: 0px -1px;
+}
+.textInput ol{
+    font-size: 16px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 5;
+    width: 580px;
+    border: 1px solid #dfdfdf;
+    padding-left: 10px;
+    margin-left: -11px;
+    display: none;
+}
+.textInput ol li{
+    height: 30px;
+    margin: 0;
+    line-height: 30px;
+    cursor: pointer;
+}
+.btnSendGroup{
+    text-align: center;
+}
+.btnSendGroup input[type="submit"],.btnSendGroup input[type="button"]{
+    width: 240px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e73d4d;
+    cursor: pointer;
+}
+.btnSendGroup input[type="button"]{
+    background: #ccc;
+    margin-left: 50px;
+}

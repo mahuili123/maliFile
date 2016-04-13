@@ -1,0 +1,884 @@
+.mainList{
+    height: 100%;
+    overflow: hidden;
+}
+.mainList li{
+    float: left;
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    margin-right: 26px;
+    margin-bottom: 26px;
+}
+.mainList li dl{
+    width: 520px;
+    height: 220px;
+    margin: 40px auto 0;
+    overflow: hidden;
+}
+.mainList li dl dt,.mainList li dl dd{
+    float: left;
+    width: 260px;
+    height: 220px;
+    text-align: center;
+}
+.mainList li dl dt img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.mainList li dl dd p{
+    padding-left: 20px;
+    text-align: left;
+    line-height: 30px;
+}
+.mainList li dl dd p.color1{
+    margin: 10px 0 20px;
+}
+/*littleNav*/
+.littleNav{
+    width: 100%;
+}
+.littleNav .littleNavCenter{
+    width: 1226px;
+    height: 13px;
+    margin: 0px auto;
+    padding: 23px 0;
+}
+.littleNav .littleNavCenter span{
+    float: left;
+    height: 13px;
+    line-height: 13px;
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+}
+.littleNav .littleNavCenter span b{
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+}
+.littleNav .littleNavCenter em{
+    width: 7px;
+    height: 13px;
+    display: inline-block;
+    float: left;
+    background: url("../images/ico/arrowRight.png") no-repeat;
+    margin:0 8px;
+}
+/*banner*/
+.lubo {
+    width: 100%;
+    min-width: 1226px;
+    clear: both;
+    position: relative;
+    height: 500px;
+}
+
+.lubo_box {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.lubo_box li {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.lubo_box li a {
+    display: block;
+    width: 760px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -380px;
+    margin-top: -250px;
+}
+
+.lubo_box li img {
+    width: 100%;
+    height: 500px;
+}
+
+/*圆点*/
+.cir_box {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+}
+
+.cir_box li {
+    float: left;
+    width: 30px;
+    height: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    background: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.cir_on {
+    background: #000 !important;
+}
+
+/*按钮*/
+.lubo_btn {
+    position: absolute;
+    width: 760px;
+    top: 200px;
+    left: 50%;
+    margin-left: -380px;
+}
+
+.leftBtn, .rightBtn {
+    width: 27px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: url("../images/ico/bannerChange.png") no-repeat 0px 0px;
+}
+
+.leftBtn {
+    float: left;
+}
+
+.rightBtn {
+    float: right;
+    background-position: -31px 0;
+}
+
+
+
+/*mainP*/
+.mainP{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 30px 0px;
+    background-color: #fff;
+}
+.mainP .mainPC,.hotProductCon{
+    width: 1226px;
+    margin: 0 auto;
+}
+.mainPCUl li{
+    width: 236px;
+    height: 188px;
+    float: left;
+    margin-right: 10px;
+}
+.mainPCUl li img{
+    max-width: 236px;
+    max-height: 188px;
+}
+.mainPCUl li.noMar{
+    margin: 0;
+}
+/*hotProduct*/
+.hotProductCon{
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.hotProduct{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #eee;
+    padding: 40px 0;
+}
+.hotProductCon h2{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.hotBox ul li{
+    width: 298px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.hotBox ul li.noMar,.viewBox ul li.noMar{
+    margin-right: 0;
+}
+.hotBox ul li img{
+    max-width: 298px;
+    max-height: 221px;
+}
+.hotBox dl dd{
+    padding: 18px;
+}
+.ddInfo{
+    margin-bottom: 30px;
+    min-height: 65px;
+}
+.ddInfo p{
+    font-size: 16px;
+    color: #000;
+    line-height: 22px;
+    font-weight: 600;
+}
+.formInfo{
+    font-size: 14px;
+    color: #999;
+    line-height: 24px;
+}
+.hotPrice{
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+   padding-top: 10px;
+}
+.hotPrice span{
+    height: 17px;
+    line-height: 17px;
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+}
+.hotPrice .title{
+    width: 170px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    float: left;
+}
+.hotPrice .rmb{
+    width: 90px;
+    color: #e73d4d;
+    border-left: 1px solid #ccc;
+    float: left;
+    text-align: center;
+}
+.viewBox ul li {
+    width:298px ;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.viewBox ul li img{
+    max-width: 298px;
+    max-height: 157px;
+}
+.viewBox ul li dd{
+    position: relative;
+    width: 298px;
+}
+.viewBox ul li em{
+    width: 39px;
+    height: 20px;
+    display: block;
+    background: url("../images/ico/play.png") no-repeat 0px -21px;
+    position: absolute;
+    left: 20px;
+    top: -30px;
+    cursor: pointer;
+}
+.viewBox ul li em.onPlay{
+    background-position: 0px 0px;
+}
+.viewBox ul li h3{
+    font-size: 16px;
+    padding: 30px 10px;
+    font-weight: normal;
+    text-align: center;
+    width: 278px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*main*/
+.main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    min-width: 1226px;
+}
+.mainCenter{
+    width: 1226px;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+.mainCenter .goodsMain{
+    margin: 25px 0;
+    height: 100%;
+    overflow: hidden;
+}
+.mainCenter .goodsMainLeft{
+    width: 610px;
+    float: left;
+    margin-right: 16px;
+}
+.mainCenter .goodsMainRight{
+    float: left;
+    width: 600px;
+}
+/*goodsMainLeft*/
+.large_box {
+    margin-bottom: 10px;
+    height: 350px;
+    overflow: hidden;
+}
+.large_box img {
+    display: block;
+    max-width: 350px;
+    max-height: 350px;
+    margin: 0 auto;
+}
+.small_box {
+    width: 610px;
+    height: 100px;
+    overflow: hidden;
+}
+.small_list {
+    position: relative;
+    float: left;
+    width: 542px;
+    height: 100px;
+    overflow: hidden;
+}
+.small_list ul {
+    height: 100px;
+    overflow: hidden;
+}
+.small_list ul li {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    width: 98px;
+    height: 98px;
+    border: 1px solid #ccc;
+}
+.small_list ul li img {
+    display: block;
+}
+.small_list ul li.on {
+    display: none;
+    border: 1px solid #e73d4d;
+}
+.small_list ul li.on{
+    display: block;
+}
+.btn {
+    display: block;
+    width: 27px;
+    height: 100px;
+    background:#fff url("../images/ico/arrowB.png") no-repeat center;
+    cursor: pointer;
+}
+.left_btn {
+    float: left;
+    margin-right: 8px;
+   background-position:0px 28px;
+}
+.right_btn {
+    float: right;
+    background-position:-34px 28px;
+}
+.small_list img{
+    max-width: 50px;
+    max-height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+/*goodsMainRight*/
+.goodsMainRight .name h1{
+    font-size: 24px;
+    color: #000;
+    font-weight: normal;
+}
+.goodsMainRight .name p{
+    color: #666;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px;
+}
+.price{
+    background-color: #f2f2f2;
+    margin: 20px 0;
+    height: 50px;
+    overflow: hidden;
+}
+.price .dt{
+    width: 80px;
+    float: left;
+    padding-left: 20px;
+    height: 50px;
+    line-height: 50px;
+    color: #666;
+    font-size: 14px;
+}
+.price .dd{
+    width: 500px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color: #e73d4d;
+    font-size: 28px;
+}
+.price .dd span{
+    float: left;
+    height: 50px;
+    line-height:50px;
+    font-size: 24px;
+}
+.price .dd em{
+    color: #999;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: line-through;
+    float: left;
+    margin-left: 20px;
+}
+.items{
+    width: 600px;
+    overflow: hidden;
+}
+.chooseColor{
+    margin-top: 30px;
+}
+.chooseSize{
+    margin-top: 10px;
+}
+.items .itemsLeft{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    float: left;
+    color: #666;
+    font-size: 14px;
+}
+.items .itemsRight{
+    width: 500px;
+    float: left;
+}
+.items .itemsRight ul li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-width: 80px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.items .itemsRight ul li.disable{
+    color: #999;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    cursor:not-allowed;
+}
+.items .itemsRight ul li.choose{
+    border: 1px solid #e73d4d;
+    background: url("../images/ico/icoSeleted.png") no-repeat bottom right;
+}
+.itemsRight .quantity-form{
+    width: 124px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+.itemsRight .quantity-form .decrement,.itemsRight .quantity-form .increment{
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    font-family:\5B8B\4F53;
+}
+.itemsRight .quantity-form .text{
+    width: 64px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+.total a{
+    display: block;
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #e73d4d;
+    color: #fff;
+    font-size: 24px;
+    float: right;
+}
+.total a:hover{
+    background-color: #b5313d;
+}
+/*goodsInfo*/
+.goodsInfo{
+    width: 100%;
+    min-width: 1226px;
+    height: 100%;
+    overflow: hidden;
+}
+.goodsInfo .innerList{
+    width: 100%;
+    min-width: 1226px;
+    height: 58px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    line-height: 58px;
+}
+.innerList .ulList{
+    width: 1226px;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+.innerList li{
+    float: left;
+    padding: 0 20px;
+    font-size: 20px;
+    cursor:pointer;
+}
+.innerList li.on{
+    color: #e73d4d;
+    border-bottom: 3px solid #e73d4d;
+    height: 55px;
+    line-height: 55px;
+}
+.innerBox{
+    width: 1226px;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+.outer div.on{
+    display: block;
+}
+.innerBox .picture img{
+    max-width: 750px;
+    margin: 10px auto;
+    display: block;
+}
+.comment{
+    height: 160px;
+    margin-top: 60px;
+}
+.comment .rate{
+    width: 160px;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+}
+.comment .rate strong{
+    font-size: 60px;
+    color: #e73d4d;
+    font-weight: normal;
+}
+.comment .rate strong em{
+    font-size: 32px;
+}
+.comment .rate span{
+    font-size: 18px;
+    color: #666;
+}
+.comment .percent{
+    width: 330px;
+    float: left;
+    margin-right: 40px;
+}
+.comment .percent dl{
+    overflow: hidden;
+    margin-top: 15px;
+}
+.comment .percent dt{
+    width: 54px;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    float: left;
+}
+.comment .percent dd{
+    float: left;
+    width: 230px;
+    height: 18px;
+    border: 1px solid #ccc;
+}
+.comment .percent dd div{
+    height: 20px;
+    width: 0;
+    background-color:#e73d4d;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+.comment .weFeel{
+    width: 660px;
+    float: left;
+}
+.comment .weFeel p{
+    color: #666;
+}
+.comment .weFeel ul{
+    height: 100%;
+    overflow: hidden;
+}
+.comment .weFeel ul li{
+    float: left;
+    min-width: 108px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #000;
+    background-color: #ffcccc;
+    margin:15px 15px 0 0;
+}
+/*comments-list*/
+.comments-list{
+    width: 1226px;
+    height: 100%;
+    overflow: hidden;
+}
+.comments-list .mt{
+    border-bottom: 1px solid #ccc;
+}
+.comments-list .mtList li{
+    min-width: 142px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #000;
+    float: left;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    border-bottom: 0;
+}
+.comments-list .mtList li.on a{
+    color: #ff3366;
+    padding-bottom: 1px;
+    background-color: #fff;
+    display: block;
+}
+.comments-list .mc{
+    display: none;
+    width: 1226px;
+}
+.mcListBox{
+    width: 1226px;
+    min-height: 800px;
+}
+.comments-list .on{
+    display: block;
+}
+.mcList{
+    width: 1226px;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 24px;
+    border-bottom: 1px solid #ccc;
+}
+.mcList .mcListLeft{
+    width: 160px;
+    float: left;
+}
+.mcList .mcListCenter{
+    width: 866px;
+    float: left;
+}
+.mcList .mcListRight{
+    width: 200px;
+    float: left;
+}
+.mcListLeft .perImg{
+    width: 72px;
+    margin: 0 auto;
+}
+.mcListLeft .perImg img{
+    max-width: 72px;
+    max-height: 72px;
+    display: block;
+    margin: 0 auto;
+}
+.mcListLeft .perImg p{
+    font-size: 12px;
+    color: #666;
+    line-height: 24px;
+}
+.mcListRight p{
+    font-size: 12px;
+    text-align: right;
+}
+.help{
+    height: 30px;
+    text-align: right;
+    padding: 10px 0;
+}
+.answer{
+    height: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+.answer p{
+    line-height: 24px;
+    color: #666;
+}
+.answer p a{
+    color: #ff3366;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*page*/
+.page{
+    height: 40px;
+    text-align: right;
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+.page .pageCon{
+    height: 40px;
+    float: right;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.page span{
+    float: left;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    border-right: 0;
+    color: #333;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "\5B8B\4F53";
+    font-weight: bold;
+}
+.page span.noPage{
+    color: #999;
+}
+.page span#next{
+    border-right: 1px solid #dfdfdf;
+}
+.page ul{
+    height: 40px;
+    overflow: hidden;
+    float: left;
+}
+.page ul li{
+    float: left;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    border-right: 0;
+    cursor: pointer;
+}
+.page ul li.on{
+    display: block;
+    background-color: #e73d4d;
+    border:1px solid #e73d4d;
+    border-right: 0;
+    color: #fff;
+}

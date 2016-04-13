@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>管理收货地址</title>
+    <link rel="stylesheet" href="css/order.css" type="text/css"/>
+    <link rel="stylesheet" href="css/common.css" type="text/css"/>
+
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="js/order.js" type="text/javascript"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/manageAddressData.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/area.js"></script>
+    <script type="text/javascript" src="js/location.js"></script>
+    <script type="text/javascript" src="js/select2.js"></script>
+    <script type="text/javascript" src="js/select2_locale_zh-CN.js"></script>
+
+    <link href="css/select2.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+<!--top-->
+<div class="top">
+    <div class="wrap1226">
+        <ul class="fr">
+            <li>张小菜<i class="top_down"></i></li>
+            <li class="borderL">我的订单</li>
+        </ul>
+    </div>
+</div>
+<!--top end-->
+<!--nav-->
+<div class="nav">
+    <div class="navContent">
+        <ul class="fl">
+            <li><a href="#" class="atop"><img src="images/logo.png" alt="暴风logo"/></a></li>
+            <li>暴风商城</li>
+        </ul>
+    </div>
+</div>
+<!--nav end-->
+<!--container-->
+<div class="containerO">
+    <div style="display:none" id="uid" data-value="1000"></div>
+    <!--conL-->
+    <div class="conL">
+        <div class="menu font14">
+            <dl>
+                <dt><a href="#">订单中心</a></dt>
+                <dd><a href="#">我的订单</a></dd>
+                <dd><a href="#">评价订单</a></dd>
+                <dd><a href="#">已删除订单</a></dd>
+            </dl>
+            <dl>
+                <dt>客户服务</dt>
+                <dd><a href="#">返修/退换货</a></dd>
+                <dd><a href="#">意见反馈</a></dd>
+            </dl>
+            <dl>
+                <dt>个人中心</dt>
+                <dd><a href="#">个人信息</a></dd>
+                <dd class="selected"><a href="#">收获地址管理</a></dd>
+            </dl>
+        </div>
+    </div>
+    <!--conL end-->
+    <!--conR-->
+    <div class="conR">
+        <div class="mainPer">
+            <div class="address">
+                <h3 class="mar26"><span class="font18">收货地址管理</span></h3>
+                <ul class="addressControlList addressSelected" id="addressSelected">
+                    <li id="addAdd">
+                        <span class="circle">+</span>
+                        <span class="font16">添加新地址</span>
+                    </li>
+                    <li data-value="59"  province="1" city="2" area="3">
+                        <dl>
+                            <dt><h3 class="font16 color3"><span>刘明1</span><i>公司</i></h3></dt>
+                            <dd>15810538756</dd>
+                            <dd>北京 北京市 海淀区</dd>
+                            <dd>学院路51号首享科技大厦13层</dd>
+                        </dl>
+                        <div class="addressControl">
+                            <div class="btn">修改</div><div class="del">删除</div><div class="defaultBtn">默认收货地址</div>
+                        </div>
+                    </li>
+                    <li data-value="58"  province="1" city="2" area="4">
+                        <dl>
+                            <dt><h3 class="font16 color3"><span>刘明2</span><i>家</i></h3></dt>
+                            <dd>15810538756</dd>
+                            <dd>北京 北京市 海淀区</dd>
+                            <dd>学院路51号首享科技大厦13层</dd>
+                        </dl>
+                        <div class="addressControl">
+                            <div class="btn">修改</div><div class="del">删除</div><div class="defaultBtn">设为默认地址</div>
+                        </div>
+                    </li>
+                    <li data-value="57"  province="1" city="2" area="5">
+                        <dl>
+                            <dt><h3 class="font16 color3"><span>刘明3</span><i>家</i></h3></dt>
+                            <dd>15810538756</dd>
+                            <dd>北京 北京市 海淀区</dd>
+                            <dd>学院路51号首享科技大厦13层</dd>
+                        </dl>
+                        <div class="addressControl">
+                            <div class="btn">修改</div><div class="del">删除</div><div class="defaultBtn">设为默认地址</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--conR end-->
+</div>
+<!--container end-->
+<<!--addressPopups-->
+<div class="addressPopups" id="addressPopups">
+    <div class="mask"></div>
+    <div class="addAddress">
+        <h3><span></span>新增收货地址</h3>
+        <ul id="addInput" class="inputIn">
+            <li class="textLi">
+                <input type="text" id="name" placeholder="收货人"  value=""/>
+                <span>收货人</span>
+            </li>
+            <li class="textLi">
+                <input type="text" id="mobile" placeholder="手机号"  value=""/>
+                <span>手机号</span>
+            </li>
+            <li class="area">
+                <select id="loc_province" style="width:235px;"></select>
+                <select id="loc_city" style="width:235px; margin-left: 8px"></select>
+                <select id="loc_town" style="width:235px;margin-left: 8px"></select>
+                <input type="button" id="btnval" value="获取值" style="padding:5px 15px;"/>
+            </li>
+            <li class="textLi">
+                <input type="text" id="addressDetail" placeholder="详细地址"  value=""/>
+                <span>详细地址</span>
+            </li>
+            <li class="textLi">
+                <input type="text" id="postcode" placeholder="邮政编码"  value=""/>
+                <span>邮政编码</span>
+            </li>
+            <li class="textLi">
+                <input type="text" id="tag" placeholder="标签"  value=""/>
+                <span>标签：如家/公司</span>
+            </li>
+        </ul>
+        <div class="errorMsg" id="errorMsg"></div>
+        <div class="btnGroup">
+            <span class="btnAddSave" id="btnAddSave" >保存</span><span class="btnAddCancel">取消</span>
+        </div>
+    </div>
+</div>
+<!--addressPopups end-->
+</body>
+</html>
